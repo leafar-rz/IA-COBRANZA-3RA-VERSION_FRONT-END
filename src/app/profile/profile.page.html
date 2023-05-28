@@ -1,0 +1,159 @@
+<ion-content class="background">
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size-xs="12" size-md="8" offset-md="2" size-lg="6" offset-lg="3">
+  
+        <div style="margin-bottom: -300px;">
+          <div id="backdivHeader">
+            <ion-back-button style="color: rgb(255, 255, 255);" title="Return" defaultHref="/footer" >
+          </ion-back-button></div>
+  
+          <div style="margin-top: -40px;">
+            <table align="center">
+              <tr>
+                <th>
+                  <ion-img id="imgTabla1Header" style="margin: auto;" src="assets/img/iaAzul.png" ></ion-img>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <h1 id="colorEtiqueta2Header" style="margin-top: 1px;">PERFIL</h1>
+                </th>
+              </tr>
+            </table><br>
+          </div>
+  
+    <div id="centradotabla" style="margin-top: 10px;">
+     
+        <br>
+        <div style="display: flex;justify-content: center;">
+          <ion-avatar style="width: 150px;height: 150px;">
+            <img [src]="urlGet">
+          </ion-avatar>
+        </div>
+        
+        <!-- <img class="fotos" src="/assets/img/user.png"/> -->
+
+        <ion-card-header>
+          <ion-card-title class="title">Usuario: {{ user?.name }}
+          </ion-card-title>
+          
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ion-card class="sub-card">
+            <ion-card-header>
+              <ion-card-subtitle>Acciones:</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+      
+              <table id="table">
+                <tr>
+                  <th>
+                    <ion-button (click)="onLogout()" style="width:75px;">Salir</ion-button>
+                  </th>
+                  <th>
+                    <ion-button (click)="changePassword()">Cambiar Contraseña</ion-button>
+                  </th>
+                </tr>
+              </table>
+             
+            </ion-card-content>
+          </ion-card>
+          
+          
+        </ion-card-content>
+    </div>
+  
+  <br><br>
+  <div id="centradotabla2" *ngIf="mostrarFormulario">
+    <table id="tablaCentral2" >
+  
+  <!--En el primer renglón de la tabla aplicamos un colspan para juntar las dos columan del primer renglón, ya que esta tabla tendrá 2 columnas
+  Dentro de este reglon habrá una etiqueta h1 con un id llamado colorEtiqueta que contiene el estilo y tendrá el texto de FORGOT-PASSWORD-->
+      <tr>
+        <th colspan="2">
+          
+          <h1 id="colorEtiqueta" >Cambiar contraseña</h1>
+        
+        </th>
+      </tr>
+  <!--El siguiente renglón habrá una etiqueta h5 que contendrá el texto de Ingresa tu dirección de correo electrónico y te enviaremos instrucciones para restablecer la contraseña.-->
+      <tr>
+        <th colspan="2">
+          <h5>
+            Ingresa la nueva contraseña que deseas tener, Min. 6 caracteres
+          </h5>
+        </th>
+      </tr>
+  
+  <!--En el siguiente renglón en la primera columna tendrá un id de estilo llamado h1TablaCentro y dentro de la primera columna habrá una etiqueta de img que tendrá un id llamado imgTabla que contendrá el estilo de la imagen, entonces en la primera columna habrá una imagen. En la segunda columna contendrá un id llamado th3TablaCentro el cual contendrá el estilo de esta columna, dentro de esta columna estará una label y un input los cuales serán para que el usuario agregue un email valido-->
+      <tr>
+          <th id="th1TablaCentro2" align="right" >
+            <ion-img id="imgTabla" aling="left" src="assets/img/password.png" ></ion-img>
+          </th>
+      
+          <th id="th2TablaCentro2" >
+            <ion-item color="none" lines="none">
+              <!-- <ion-label position="floating">Contraseña</ion-label> -->
+              <!--Le asiganmos que este sera el email que recibira como parametro el metodo forgot-password()-->
+              <!-- <ion-input style="font-size: 15px;" type="password" [(ngModel)]="password" minlength="6"></ion-input>
+              <ion-note slot="helper">Enter a valid password</ion-note>
+              <ion-note slot="error">Password email</ion-note> -->
+              <ion-input type="password" label="Contraseña" labelPlacement="floating" helperText="Enter a valid password" errorText="Invalid password" [(ngModel)]="password" minlength="6"></ion-input>
+            </ion-item>
+            
+          </th>
+          
+      </tr>
+    </table>
+  
+  </div>
+  <br>
+  <!--Después tendremos una tabla que tendrá un id de estilo llamado botón, dentro del renglón habrá un con un id de estilo llamado estiloBoton, este botón tendrá un routerLink a la página de login, este botón tendrá un color fondo en el html por eso el fill en solid, el tamaño del botón será el de por defecto, el texto que tendrá será RESTABLECER, este botón lo que hará será restablecernos la contraseña para poder hacer log in-->
+  <table id="boton2" >
+    <tr>
+      <th>
+        <!--Llamamos al metodo forgotPassword() del ts-->
+        <ion-button id="estiloBoton2" size="default" fill="solid" *ngIf="mostrarFormulario" [disabled]="password?.length < 6" (click)="changePasswordMethod()" >RESTABLECER</ion-button>
+      </th>
+  
+      <th>
+        <!--Llamamos al metodo forgotPassword() del ts-->
+        <ion-button id="estiloBoton2" style="margin-left: 5px;" size="default" fill="solid" *ngIf="mostrarFormulario" (click)="cancel()">CANCELAR</ion-button>
+      </th>
+    </tr>
+  </table><br><br><br><br>
+        </div>
+       
+
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>
+
+
+ <ion-footer class="mi-footer">  
+   
+   <div id="divEstiloFooter">
+    <table align="center" id="tablaFooter">
+      <tr >
+        
+          <th align="center" >
+          <ion-img src="assets/img/comentarios.png" id="imgFooter" [routerLink]="['/dashboard']"></ion-img>
+        </th>
+        <th align="center">
+          <ion-img src="assets/img/casa.png" id="imgFooter"  [routerLink]="['/dashboard']"></ion-img>
+        </th>
+        <th align="center">
+          <ion-img src="assets/img/info.png" id="imgFooter"  [routerLink]="['/dashboard']"></ion-img>
+        </th>
+        <th align="center">
+          <ion-img src="assets/img/userNegro.png" id="imgFooter"  [routerLink]="['/profile']"></ion-img>
+        </th>
+      </tr>
+    </table>
+  </div>
+  
+</ion-footer>  
+

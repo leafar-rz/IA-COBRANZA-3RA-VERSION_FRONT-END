@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+   
+  
+
+  <table align="center">
+    <tr>
+      <!-- <th style="width: 26%;">
+        <ion-back-button style="margin-left: 10px; margin-top: 10px; color:black;" title="Return" defaultHref="/" >
+        </ion-back-button>
+      </th> -->
+
+      <th style="width: 70%;">
+        AGREGA TU FOTO DE PERFIL
+      </th>
+
+      <!-- <th style="width: 46%;">
+        <ion-button (click)="reload()">RESET</ion-button>
+      </th> -->
+
+      <!-- <th style="width: 46%;">
+        <ion-button *ngIf="selectedImage?.webPath" expand="block" class="ion-margin" (click)="share()">SEND</ion-button>
+      </th> -->
+    </tr>
+  </table>
+
+</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+ 
+<!-- vamos a poner la ruta dentro de la imagen -->
+
+<!-- <ion-img [src]="photo" *ngFor="let photo of photos"> </ion-img> -->
+  <!-- <ion-img [src]="selectedImage?.webPath" ></ion-img> -->
+
+  <br><br><br><br>
+
+  <div *ngIf="base64bd" style="display: flex;justify-content: center;">
+    <ion-avatar style="width: 300px;height: 300px;">
+       <img [src]="selectedImage?.webPath"> 
+      
+    </ion-avatar>
+  </div>
+  
+  <!-- <ion-button (click)="metodoGet()" style="width: 100%;"> Obtener img en otra parte</ion-button>
+
+  <div *ngIf="urlGet" style="display: flex;justify-content: center;">
+    <ion-avatar style="width: 150px;height: 150px;">
+      <img [src]="urlGet" >
+    </ion-avatar>
+  </div> -->
+
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+
+  <table>
+    <tr>
+      <th>
+        <ion-fab-button (click)="getPicture()"> <!-- mandar llamar la funcion --> 
+          <ion-icon name="camera">
+          </ion-icon>
+        </ion-fab-button>
+      </th>
+      <th>
+        <div>
+          <ion-button fill="clear" style="font-size: 20px;" (click)="crearImg()">Continuar</ion-button>
+        </div>
+      </th>
+    </tr>
+  </table>
+
+  
+
+   
+
+    
+</ion-fab>
+
+
+
+</ion-content>
+

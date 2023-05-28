@@ -1,0 +1,107 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+.mi-footer {
+    //background-image: url('/assets/img/azul.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(145, 204, 226); 
+    height: 60px;
+  }
+  
+  #divEstiloFooter
+  {
+    background-color: rgb(145, 204, 226);
+     height: 60px;
+  }
+
+  #tablaFooter{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #imgFooter
+  {
+    width: 35px;
+  }
+
+  #backdivHeader
+  {
+    text-align: center;
+    size: default;
+    width:21% ;
+    height:45px ;
+    background-color: rgb(64, 151, 170);
+    color: white;
+    border-radius: 100px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  #imgTabla1Header{
+    width:70% ;
+    height:70% ;
+    padding-left: -10px;
+    padding-top: 10px;
+  }
+
+  #colorEtiqueta2Header{
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  ion-content.background{
+    --background: url("/assets/img/azul.jpg") 0 0/100% 100% no-repeat;
+  }
+
+  
+  #ion-list-estilo
+  {
+    width: 340px;margin: auto; 
+    border-radius: 20px;  
+    box-shadow: 0 0 15px #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #inputAbono
+  {
+    width: 340px;margin: auto; 
+    border-radius: 20px;  
+    box-shadow: 0 0 15px #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(240, 221, 126);
+  
+ 
+  }

@@ -1,0 +1,89 @@
+ion-content.background{
+  --background: url("/assets/img/azul.jpg") 0 0/100% 100% no-repeat;
+}
+#header{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+#footer{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+#h3Center{
+  text-align: center;
+}
+
+
+#redondo{
+ // border:3px solid rgb(110, 108, 108);
+  border-radius: 20px;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  font-size:larger;
+  background-color: white;
+  //box-shadow: 0 0 15px #45a6c4; 
+}
+
+#userfoto{
+  width: 50%;
+  height: 50%;  
+  margin: auto;
+}
+
+#pTabla{
+  font-size:10px;
+}
+
+#thTabla{
+  height: 50%;
+  width: 50%;
+}
+
+#imgRutas{
+  width: 3cm;
+  height: 2cm;
+  margin: auto;
+}
+
+#imgClientes{
+  width: 50%;
+  height: 80%;
+  margin: auto;
+}
+
+#imgDevolucion{
+  width: 60%;
+  height: 50%;
+  margin: auto;
+}
+
+
+
+.mi-header {
+  //background-image: url('/assets/img/azul.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(145, 204, 226);
+  height: 60px;
+}
+
+
+#div1
+{
+  margin-top: -20px;
+}
+
+#imgTabla1{
+  width:70% ;
+  height:70% ;
+  padding-left: -10px;
+  padding-top: 10px;
+}

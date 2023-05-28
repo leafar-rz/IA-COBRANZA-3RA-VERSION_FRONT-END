@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">IACOBRANZA</string>
+    <string name="title_activity_main">IACOBRANZA</string>
+    <string name="package_name">com.plantilla.camaraShareApp</string>
+    <string name="custom_url_scheme">com.plantilla.camaraShareApp</string>
+</resources>

@@ -1,0 +1,243 @@
+ion-content.background{
+  --background: url("/assets/img/azul.jpg") 0 0/100% 100% no-repeat;
+}
+background
+{
+ background-color: aqua;
+}
+
+#centradotabla{
+  border-radius: 30px;
+  width: 70%;
+  height: 40%;
+  text-align: center;
+  margin: 0 auto;
+  font-size:larger;
+  background-color: white;
+  //box-shadow: 0 0 15px #45a6c4;
+}
+
+#encabezado{
+  margin: 0 auto;
+  width:100%;
+  height:10% ;
+}
+
+#thEncabezado{
+
+  width:100%;
+  height:15% ;
+}
+
+#tablaCentral{
+  margin: 0 auto;
+  width:90%;
+  height:80% ;
+}
+
+#thEncabezadoTablaCentral{
+  column-span: 2;
+  margin: auto;
+  width:30% ;height:30% ;
+}
+
+#thEncabezadoTablaCentral2{
+  column-span: 2;
+  margin: auto;
+  width: 1cm;height: 1cm;
+}
+
+#thEncabezadoTablaCentral3{
+  column-span: 2;
+  margin: auto;
+  width: 2cm;height: 1cm;
+}
+
+#thEncabezadoTablaCentral4{
+  column-span: 2;
+  margin: auto;
+  width: 1cm;height: 2cm;
+}
+
+#colorEtiqueta{
+  color: rgb(78, 169, 238);
+  text-align: center;
+}
+
+#colorEtiqueta2{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#th1TablaCentro{
+  
+  width:10% ;
+  height:20% ;
+}
+
+#imgTabla{
+  width:70% ;
+  height:70% ;
+  //padding-left: -10px;
+  padding-top: 10px;
+}
+
+#imgTabla1{
+  width:70% ;
+  height:70% ;
+  padding-left: -10px;
+  padding-top: 10px;
+}
+#imgPass
+{
+  
+  width: 80px;
+}
+
+#th2TablaCentro{
+  width: auto;
+}
+
+#th3TablaCentro{
+  width: auto;
+}
+
+#th4TablaCentro{
+  width:10% ;height:20% ;
+}
+
+#tableContraseña{
+  width:50% ;height:10% ;
+  margin:0 auto;
+}
+
+#boton1{
+  size: default;
+  width:60% ;font-size: medium;
+  height: 1cm;
+}
+
+#boton{
+  margin: auto;
+  width:70% ;height:1cm ;
+}
+
+#botonSing{
+  height: 45%;width: 60%;
+}
+
+
+#tablaBotonSingUp{
+margin: auto;
+width:90% ;height:10% ;
+}
+
+#labelNoTengoCuenta{
+  position: floating;
+  font-size: small;color: rgb(73, 71, 69);
+
+}
+
+#footerTabla{
+  margin: auto;
+  width:100%;height:10% ;
+}
+
+#thFooter{
+ width:100%;height:15% ;
+  }
+
+  ion-item {
+    --ion-item-background: transparent;
+}
+
+#boton2{
+  width:3cm ;
+  height: 30px;
+  color: rgb(73, 138, 203);
+}
+
+#thSignUpButton{
+  width: 1cm;height: 1cm;
+}
+
+#botonCondiciones{
+  width: 7cm;
+  height: 100%;
+  margin: auto;
+  color:black;
+}
+
+#signUp{
+  width: 55%;
+  height: 11%;
+  //border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+  font-size:larger;
+  //background-color: white;
+  //box-shadow: 0 0 15px #45a6c4;
+}
+
+#divLogin{
+  margin: auto;
+  height: 2cm;
+  width: 5cm;
+}
+
+#botonSingUp{
+  font-size: medium;
+  margin: auto;
+  
+}
+
+#input1{
+  size: default;
+  width:70% ;
+  height:45px ;
+  background-color: rgb(64, 151, 170);
+  color: white;
+  border-radius: 40px;
+  border: none;
+}
+
+#input2{
+  text-align: center;
+  size: default;
+  width:100% ;
+  height:45px ;
+  background-color: rgb(64, 151, 170);
+  color: white;
+  border-radius: 40px;
+  border: none;
+  
+}
+
+#backdiv
+{
+  text-align: center;
+  size: default;
+  width:21% ;
+  height:35px ;
+  background-color: rgb(64, 151, 170);
+  color: white;
+  border-radius: 100px;
+  border: none;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+header
+{
+background-color: rgb(0, 81, 255);
+}
+
+/*
+.mi-footer {
+  background-image: url('/assets/img/azulFooter.png');
+  background-size: cover;
+  background-position: center;
+}
+*/
+
